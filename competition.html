@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trollhunters</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>TrollHunters</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="resource.html">Shop</a>
+                <a id="active" href="competition.html">Competition</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Picture Competition</h1>
+            <p>Upload picture of your favorite character from Trollhunters, that you
+            have drawn by your self and win one of them amazing prices</p>
+            <div class="pr">
+                <img class="prize" src="Images/prize1.jpg" alt="Statue">
+                <!-- http://www.dreamworkstv.com/shows/dreamworks-trollhunters/?show_character=7820 -->
+                <p>Draal figurine</p>
+            </div>
+            <div class="pr">
+                <img class="prize" src="Images/prize2.jpeg" alt="Sword">
+                <!-- https://www.google.ie/search?q=trollhunters+sword&tbm=isch&source=iu&ictx=1&fir=41Nn9yETtmIS1M%253A%252Cvtu6KOvYBtLo-M%252C_&usg=AI4_-kTd_OcCtUON4CkCeQG7Mtjz9jwx0g&sa=X&ved=2ahUKEwid6u_G6c_eAhXnAcAKHZ3jAfYQ9QEwAXoECAUQBg#imgrc=41Nn9yETtmIS1M: -->
+                <p>Trollhunters Sword</p>
+            </div>
+            <div class="pr">
+                <img class="prize" src="Images/prize3.jpg" alt="Medalion">
+                <!-- https://aminoapps.com/c/cacadores-de-trollspt-br/page/item/amuleto-da-luz-do-dia/Ebnj_kMiLI5W64NdYG372RQKPazBVmaoqJ -->    
+                <p>Trollhunters Medalion</p>
+            </div>
+            <form method="post" action="http://atlantis.cit.ie/displayvalues.php">
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <label>Fields marked with * is required</label>
+                    <p>
+                        <label>What is your name?*
+                        <input required type="text" name="firstname"></label>
+                    </p>
+                    <p>
+                        <label>How old are you?*
+                        <input required type="number" name="age" max="13"></label>
+                    </p>
+                    <p>
+                        <div>
+                        <label id="dob_label">What's your date of birth?*</label>
+							<select class="dob" required name="dob_day" size="1">
+                                <option value="">Day</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+							</select>
+							<select class="dob" required name="dob_month">
+								<option value="">Month</option>
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option> 
+							</select>
+                            <select class="dob" required name="dob_year">
+                                <option value="">Year</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                            </select>
+                        </div>
+                    <p>
+                        <label>What's your favorite character in Trollhunters?
+                        <input type="text" name="favorite_char"></label>
+                    </p>
+                    <p>
+                        <label for="mult_s">What's your favorite character in other cartoons?<br>
+                        (Press and hold Control button for multiple selection)
+                        </label>
+                    </p>
+                        <select id="mult_s" multiple name="characters[]">
+                            <option>Select Your Favorites</option>
+                            <optgroup label="Trollhunters">
+                                <option>Jim</option>
+                                <option>Claire</option>
+                                <option>Blinky</option>
+                                <option>Gunmar</option>
+                                <option>Argh</option>
+                                <option>Toby</option>
+                            <optgroup label="Pokemons">
+                                <option>Ash</option>
+								<option>Misty</option>
+								<option>Picachu</option>
+                                <option>Serena</option>
+                            <optgroup label="Paw Patrols">
+                                <option>Chase</option>
+                                <option>Skye</option>
+                                <option>Marshal</option>
+                                <option>Rocky</option>
+                                <option>Zuma</option>
+                        </select>
+                    <p>
+                        <label>What's your favorite colour?
+                        <input type="text" name="fav_color"></label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Section for Parent's</legend>
+                    <p>
+                        <label>Parent's name:*
+                        <input required type="text" name="parents_name"></label>
+                    </p>
+                    <p>
+                        <label>Parent's Surname:*
+                        <input required type="text" name="parents_surname"></label>
+                    </p>
+                    <p>
+                        <label>Email:*
+                        <input required type="email" name="email"></label>
+                    </p>
+                    <p>
+                        <label >Upload your Picture Here!:*
+                            <input required type="file" name="picture">
+                        </label>
+                    </p>
+                </fieldset> 
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear Form">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2018</p>
+            <p> - by Aidas Karpavicius. All Rights Reserved.</p>
+            <p>Contact us: <a href="mailto:aidas.karpavicius@trollhunters.com">Email</a>
+			<p id="legal">All graphics on this web site are the
+			property of the websites that it was downloaded from.
+			Each image tag has a comment line under it with a link
+			to it's source. Do not use this resource due to copyright
+			breach. It is used here for learning purpose only, it will not 
+			be shared in any way.</p>
+            <div>
+            <!-- All 3 icons aquired from https://www.iconspedia.com -->
+                <a href="https://www.facebook.com/Trollhuntersseries/"><img src="Images/facebook.png" 
+                alt="Facebook icon" width="50" height="50"></a>
+                <a href="https://twitter.com/trollhunters?lang=en"><img src="Images/twitter.png" 
+                alt="Twitter icon" width="50" height="50"></a>
+                <a href="https://www.pinterest.ie/ameliaswolgaard/trollhunters/"><img src="Images/pinterest.png" 
+                alt="Pinterest icon" width="50" height="50"></a>
+            </div>
+        </footer>
+    </body>
+</html>
